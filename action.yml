@@ -14,6 +14,8 @@ inputs:
     description: 'Azure DevOps projectId for which the build and artifacts belongs to'
   branchName:
     description: 'Branch name to use for filtering builds'
+  commit:
+    description: 'Git commit to use for filtering builds'
 branding:
   icon: 'download-cloud'
   color: 'blue'

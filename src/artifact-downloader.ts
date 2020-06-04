@@ -5,7 +5,8 @@ import * as fs from 'fs';
 export class ArtifactDownloader {
     constructor(){}
     public async download(projectId: string, buildDefinitionId: number,
-        patToken: string, orgName: string, artifactName: string, branchName: string): Promise<void> {
+        patToken: string, orgName: string, artifactName: string,
+         branchName: string, commit: string): Promise<void> {
 
             // base tfs url
             const baseTfsUrl = 'https://dev.azure.com';
@@ -17,7 +18,10 @@ export class ArtifactDownloader {
             let connection = new azdev.WebApi(orgUrl, authHandler);
             const buildApi = await connection.getBuildApi();
             // get top build for a particular definitions
-            const builds = await buildApi.getBuilds(projectId, [buildDefinitionId], undefined, undefined, undefined, undefined, undefined, undefined, bi.BuildStatus.Completed, undefined, undefined, undefined, 1, branchName || undefined, undefined, undefined, undefined);
+            let builds = await buildApi.getBuilds(projectId, [buildDefinitionId], undefined, undefined, undefined, undefined, undefined, undefined, bi.BuildStatus.Completed, undefined, undefined, undefined, 1, branchName || undefined, undefined, undefined, undefined);
+            if (commit) {
+                builds = builds.filter(build => build.sourceVersion == commit);
+            }
             const latestBuild = builds[0];
             // get artifact as zip
             const readableStream = await buildApi.getArtifactContentZip(projectId, Number(latestBuild.id), artifactName);

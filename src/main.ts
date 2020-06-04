@@ -8,9 +8,10 @@ async function run(): Promise<void> {
     const patToken: string = core.getInput('patToken');
     const orgName: string = core.getInput('orgName');
     const branchName: string = core.getInput('branchName');
+    const commit: string = core.getInput('commit');
     const artifactName: string = core.getInput('artifactName');
     const artifactDownloader = new ArtifactDownloader();
-    artifactDownloader.download(projectId, buildDefinitionId, patToken, orgName, artifactName, branchName);
+    artifactDownloader.download(projectId, buildDefinitionId, patToken, orgName, artifactName, branchName, commit);
   } catch (error) {
     core.setFailed(error.message)
   }
