@@ -42,7 +42,7 @@ export class ArtifactDownloader {
       undefined, // maxBuildsPerDefinition
       undefined, // deletedFilter
       undefined, // queryOrder
-      undefined, // branchName
+      branchName || undefined, // branchName
       undefined, // buildIds
       undefined, // repositoryId
       undefined // repositoryType
