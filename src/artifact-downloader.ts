@@ -44,7 +44,7 @@ export class ArtifactDownloader {
       undefined, // maxBuildsPerDefinition
       undefined, // deletedFilter
       undefined, // queryOrder
-      branchName || undefined, // branchName
+      undefined, // branchName
       undefined, // buildIds
       undefined, // repositoryId
       undefined // repositoryType
@@ -56,8 +56,12 @@ export class ArtifactDownloader {
     console.log('Found build', latestBuild)
 
     targetDirectory = `${process.env.GITHUB_WORKSPACE}/${targetDirectory}`
+    if (!fs.existsSync(targetDirectory)) {
+      fs.mkdirSync(targetDirectory)
+    }
 
     let artifactNames: (string | undefined)[] = [artifactName]
+
     if (!artifactName) {
       const buildArtifacts = await buildApi.getArtifacts(
         projectId,

@@ -34,456 +34,6 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(429);
-/******/ 	};
-/******/
-/******/ 	// run startup
-/******/ 	return startup();
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 16:
-/***/ (function(module) {
-
-module.exports = require("tls");
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module) {
-
-module.exports = require("os");
-
-/***/ }),
-
-/***/ 211:
-/***/ (function(module) {
-
-module.exports = require("https");
-
-/***/ }),
-
-/***/ 357:
-/***/ (function(module) {
-
-module.exports = require("assert");
-
-/***/ }),
-
-/***/ 413:
-/***/ (function(module) {
-
-module.exports = require("stream");
-
-/***/ }),
-
-/***/ 417:
-/***/ (function(module) {
-
-module.exports = require("crypto");
-
-/***/ }),
-
-/***/ 429:
-/***/ (function(module, __unusedexports, __webpack_require__) {
-
-module.exports =
-/******/ (function(modules, runtime) { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	__webpack_require__.ab = __dirname + "/";
-/******/
-/******/ 	// the startup function
-/******/ 	function startup() {
-/******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(429);
-/******/ 	};
-/******/
-/******/ 	// run startup
-/******/ 	return startup();
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 16:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(16);
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(87);
-
-/***/ }),
-
-/***/ 211:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(211);
-
-/***/ }),
-
-/***/ 357:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(357);
-
-/***/ }),
-
-/***/ 413:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(413);
-
-/***/ }),
-
-/***/ 417:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(417);
-
-/***/ }),
-
-/***/ 429:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1924__) {
-
-module.exports =
-/******/ (function(modules, runtime) { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	__webpack_require__.ab = __dirname + "/";
-/******/
-/******/ 	// the startup function
-/******/ 	function startup() {
-/******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(429);
-/******/ 	};
-/******/
-/******/ 	// run startup
-/******/ 	return startup();
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 16:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(16);
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(87);
-
-/***/ }),
-
-/***/ 211:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(211);
-
-/***/ }),
-
-/***/ 357:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(357);
-
-/***/ }),
-
-/***/ 413:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(413);
-
-/***/ }),
-
-/***/ 417:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(417);
-
-/***/ }),
-
-/***/ 429:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1924__) {
-
-module.exports =
-/******/ (function(modules, runtime) { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	__webpack_require__.ab = __dirname + "/";
-/******/
-/******/ 	// the startup function
-/******/ 	function startup() {
-/******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(429);
-/******/ 	};
-/******/
-/******/ 	// run startup
-/******/ 	return startup();
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 16:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(16);
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(87);
-
-/***/ }),
-
-/***/ 211:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(211);
-
-/***/ }),
-
-/***/ 357:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(357);
-
-/***/ }),
-
-/***/ 413:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(413);
-
-/***/ }),
-
-/***/ 417:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(417);
-
-/***/ }),
-
-/***/ 429:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1924__) {
-
-module.exports =
-/******/ (function(modules, runtime) { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	__webpack_require__.ab = __dirname + "/";
-/******/
-/******/ 	// the startup function
-/******/ 	function startup() {
-/******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(429);
-/******/ 	};
-/******/
-/******/ 	// run startup
-/******/ 	return startup();
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 16:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(16);
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(87);
-
-/***/ }),
-
-/***/ 211:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(211);
-
-/***/ }),
-
-/***/ 357:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(357);
-
-/***/ }),
-
-/***/ 413:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(413);
-
-/***/ }),
-
-/***/ 417:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(417);
-
-/***/ }),
-
-/***/ 429:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1924__) {
-
-module.exports =
-/******/ (function(modules, runtime) { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	__webpack_require__.ab = __dirname + "/";
-/******/
-/******/ 	// the startup function
-/******/ 	function startup() {
-/******/ 		// Load entry module and return exports
 /******/ 		return __webpack_require__(198);
 /******/ 	};
 /******/
@@ -494,7 +44,7 @@ module.exports =
 /******/ ({
 
 /***/ 7:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1416__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -516,8 +66,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1416__(710);
-const SecurityRolesInterfaces = __nested_webpack_require_1416__(514);
+const basem = __webpack_require__(710);
+const SecurityRolesInterfaces = __webpack_require__(514);
 class SecurityRolesApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-SecurityRoles-api', options);
@@ -690,7 +240,7 @@ exports.SecurityRolesApi = SecurityRolesApi;
 /***/ }),
 
 /***/ 12:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_10104__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -712,8 +262,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_10104__(710);
-const LocationsInterfaces = __nested_webpack_require_10104__(851);
+const basem = __webpack_require__(710);
+const LocationsInterfaces = __webpack_require__(851);
 class LocationsApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Locations-api', options);
@@ -980,7 +530,7 @@ exports.LocationsApi = LocationsApi;
 /***/ 16:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(16);
+module.exports = require("tls");
 
 /***/ }),
 
@@ -1067,7 +617,7 @@ exports.TypeInfo.RepositoryLanguageAnalytics.fields = {
 /***/ }),
 
 /***/ 48:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_25447__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -1089,8 +639,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_25447__(710);
-const TaskAgentInterfaces = __nested_webpack_require_25447__(267);
+const basem = __webpack_require__(710);
+const TaskAgentInterfaces = __webpack_require__(267);
 class TaskApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Task-api', options);
@@ -1811,13 +1361,13 @@ exports.TaskApi = TaskApi;
 /***/ }),
 
 /***/ 56:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_61760__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 var log = console.log;
-var crypto = __nested_webpack_require_61760__(417);
-var $ = __nested_webpack_require_61760__(144);
-var lmhashbuf = __nested_webpack_require_61760__(826).lmhashbuf;
-var nthashbuf = __nested_webpack_require_61760__(826).nthashbuf;
+var crypto = __webpack_require__(417);
+var $ = __webpack_require__(144);
+var lmhashbuf = __webpack_require__(826).lmhashbuf;
+var nthashbuf = __webpack_require__(826).nthashbuf;
 
 
 function encodeType1(hostname, ntdomain) {
@@ -2026,19 +1576,19 @@ exports.challengeHeader = function (hostname, domain) {
 
 exports.responseHeader = function (res, url, domain, username, password) {
   var serverNonce = new Buffer((res.headers['www-authenticate'].match(/^NTLM\s+(.+?)(,|\s+|$)/) || [])[1], 'base64');
-  var hostname = __nested_webpack_require_61760__(835).parse(url).hostname;
+  var hostname = __webpack_require__(835).parse(url).hostname;
   return 'NTLM ' + exports.encodeType3(username, hostname, domain, exports.decodeType2(serverNonce), password).toString('base64')
 };
 
 // Import smbhash module.
 
-exports.smbhash = __nested_webpack_require_61760__(826);
+exports.smbhash = __webpack_require__(826);
 
 
 /***/ }),
 
 /***/ 75:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_68204__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -2051,8 +1601,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const taskagentbasem = __nested_webpack_require_68204__(335);
-const url = __nested_webpack_require_68204__(835);
+const taskagentbasem = __webpack_require__(335);
+const url = __webpack_require__(835);
 class TaskAgentApi extends taskagentbasem.TaskAgentApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, options);
@@ -2249,12 +1799,12 @@ exports.TaskAgentApi = TaskAgentApi;
 /***/ 87:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(87);
+module.exports = require("os");
 
 /***/ }),
 
 /***/ 105:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_77681__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -2269,8 +1819,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const httpm = __nested_webpack_require_77681__(874);
-const util = __nested_webpack_require_77681__(729);
+const httpm = __webpack_require__(874);
+const util = __webpack_require__(729);
 class RestClient {
     /**
      * Creates an instance of the RestClient
@@ -2479,7 +2029,7 @@ exports.RestClient = RestClient;
 /***/ }),
 
 /***/ 109:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_87892__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -2501,8 +2051,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_87892__(710);
-const FeatureManagementInterfaces = __nested_webpack_require_87892__(172);
+const basem = __webpack_require__(710);
+const FeatureManagementInterfaces = __webpack_require__(172);
 class FeatureManagementApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-FeatureManagement-api', options);
@@ -2956,18 +2506,18 @@ exports.TypeInfo = {
 /***/ }),
 
 /***/ 141:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_107985__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 
-var net = __nested_webpack_require_107985__(631);
-var tls = __nested_webpack_require_107985__(16);
-var http = __nested_webpack_require_107985__(605);
-var https = __nested_webpack_require_107985__(211);
-var events = __nested_webpack_require_107985__(614);
-var assert = __nested_webpack_require_107985__(357);
-var util = __nested_webpack_require_107985__(669);
+var net = __webpack_require__(631);
+var tls = __webpack_require__(16);
+var http = __webpack_require__(605);
+var https = __webpack_require__(211);
+var events = __webpack_require__(614);
+var assert = __webpack_require__(357);
+var util = __webpack_require__(669);
 
 
 exports.httpOverHttp = httpOverHttp;
@@ -3228,9 +2778,9 @@ exports.debug = debug; // for test
 /***/ }),
 
 /***/ 144:
-/***/ (function(module, __unusedexports, __nested_webpack_require_115762__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
-var crypto = __nested_webpack_require_115762__(417);
+var crypto = __webpack_require__(417);
 
 function zeroextend(str, len)
 {
@@ -3296,7 +2846,7 @@ module.exports.bintohex = bintohex;
 /***/ }),
 
 /***/ 155:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_117328__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -3310,7 +2860,7 @@ module.exports.bintohex = bintohex;
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const TfsCoreInterfaces = __nested_webpack_require_117328__(976);
+const TfsCoreInterfaces = __webpack_require__(976);
 var ItemContentType;
 (function (ItemContentType) {
     ItemContentType[ItemContentType["RawText"] = 0] = "RawText";
@@ -3673,7 +3223,7 @@ exports.TypeInfo.ContributedFeatureStateQuery.fields = {
 /***/ }),
 
 /***/ 179:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_129268__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -3687,7 +3237,7 @@ exports.TypeInfo.ContributedFeatureStateQuery.fields = {
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const SystemInterfaces = __nested_webpack_require_129268__(138);
+const SystemInterfaces = __webpack_require__(138);
 /**
  * Definition of the type of backlog level
  */
@@ -4230,14 +3780,14 @@ exports.TypeInfo.UpdatePlan.fields = {
 /***/ }),
 
 /***/ 186:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_145749__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 Object.defineProperty(exports, "__esModule", { value: true });
-const resthandlers = __nested_webpack_require_145749__(941);
+const resthandlers = __webpack_require__(941);
 class BasicCredentialHandler extends resthandlers.BasicCredentialHandler {
     constructor(username, password) {
         super(username, password);
@@ -4249,10 +3799,29 @@ exports.BasicCredentialHandler = BasicCredentialHandler;
 /***/ }),
 
 /***/ 198:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_146338__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -4262,16 +3831,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const core = __importStar(__nested_webpack_require_146338__(470));
-const artifact_downloader_1 = __nested_webpack_require_146338__(918);
+const core = __importStar(__webpack_require__(470));
+const artifact_downloader_1 = __webpack_require__(918);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -4282,8 +3844,9 @@ function run() {
             const branchName = core.getInput('branchName');
             const commit = core.getInput('commit');
             const artifactName = core.getInput('artifactName');
+            const targetDirectory = core.getInput('targetDirectory');
             const artifactDownloader = new artifact_downloader_1.ArtifactDownloader();
-            artifactDownloader.download(projectId, buildDefinitionId, patToken, orgName, artifactName, branchName, commit);
+            artifactDownloader.download(projectId, buildDefinitionId, patToken, orgName, artifactName, branchName, commit, targetDirectory);
         }
         catch (error) {
             core.setFailed(error.message);
@@ -4296,7 +3859,7 @@ run();
 /***/ }),
 
 /***/ 205:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_148407__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -4318,8 +3881,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const compatBase = __nested_webpack_require_148407__(461);
-const GalleryInterfaces = __nested_webpack_require_148407__(352);
+const compatBase = __webpack_require__(461);
+const GalleryInterfaces = __webpack_require__(352);
 class GalleryApi extends compatBase.GalleryCompatHttpClientBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Gallery-api', options);
@@ -6671,7 +6234,7 @@ exports.GalleryApi = GalleryApi;
 /***/ 211:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(211);
+module.exports = require("https");
 
 /***/ }),
 
@@ -6856,7 +6419,7 @@ exports.TypeInfo = {
 /***/ }),
 
 /***/ 217:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_269464__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -6878,8 +6441,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_269464__(710);
-const WorkInterfaces = __nested_webpack_require_269464__(179);
+const basem = __webpack_require__(710);
+const WorkInterfaces = __webpack_require__(179);
 class WorkApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Work-api', options);
@@ -8773,7 +8336,7 @@ exports.WorkApi = WorkApi;
 /***/ }),
 
 /***/ 221:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_356512__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -8795,8 +8358,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_356512__(710);
-const TfvcInterfaces = __nested_webpack_require_356512__(155);
+const basem = __webpack_require__(710);
+const TfvcInterfaces = __webpack_require__(155);
 class TfvcApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Tfvc-api', options);
@@ -9637,7 +9200,7 @@ exports.TfvcApi = TfvcApi;
 /***/ }),
 
 /***/ 222:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_399865__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -9659,8 +9222,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_399865__(710);
-const ProjectAnalysisInterfaces = __nested_webpack_require_399865__(44);
+const basem = __webpack_require__(710);
+const ProjectAnalysisInterfaces = __webpack_require__(44);
 class ProjectAnalysisApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-ProjectAnalysis-api', options);
@@ -9851,7 +9414,7 @@ exports.BasicCredentialHandler = BasicCredentialHandler;
 /***/ }),
 
 /***/ 229:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_409462__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -9873,8 +9436,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_409462__(710);
-const WorkItemTrackingInterfaces = __nested_webpack_require_409462__(574);
+const basem = __webpack_require__(710);
+const WorkItemTrackingInterfaces = __webpack_require__(574);
 class WorkItemTrackingApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-WorkItemTracking-api', options);
@@ -12678,14 +12241,14 @@ exports.WorkItemTrackingApi = WorkItemTrackingApi;
 /***/ }),
 
 /***/ 231:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_544313__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 Object.defineProperty(exports, "__esModule", { value: true });
-const resthandlers = __nested_webpack_require_544313__(941);
+const resthandlers = __webpack_require__(941);
 class BearerCredentialHandler extends resthandlers.BearerCredentialHandler {
     constructor(token) {
         super(token);
@@ -12697,7 +12260,7 @@ exports.BearerCredentialHandler = BearerCredentialHandler;
 /***/ }),
 
 /***/ 256:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_544880__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -12711,8 +12274,8 @@ exports.BearerCredentialHandler = BearerCredentialHandler;
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const TFS_TestManagement_Contracts = __nested_webpack_require_544880__(966);
-const TfsCoreInterfaces = __nested_webpack_require_544880__(976);
+const TFS_TestManagement_Contracts = __webpack_require__(966);
+const TfsCoreInterfaces = __webpack_require__(976);
 var AgentStatus;
 (function (AgentStatus) {
     /**
@@ -14199,7 +13762,7 @@ exports.TypeInfo.XamlBuildDefinition.fields = {
 /***/ }),
 
 /***/ 267:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_590423__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -14213,7 +13776,7 @@ exports.TypeInfo.XamlBuildDefinition.fields = {
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const FormInputInterfaces = __nested_webpack_require_590423__(804);
+const FormInputInterfaces = __webpack_require__(804);
 var AadLoginPromptOption;
 (function (AadLoginPromptOption) {
     /**
@@ -15839,7 +15402,7 @@ exports.TypeInfo.WidgetTypesResponse.fields = {
 /***/ }),
 
 /***/ 314:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_642842__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -15853,7 +15416,7 @@ exports.TypeInfo.WidgetTypesResponse.fields = {
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const FormInputInterfaces = __nested_webpack_require_642842__(804);
+const FormInputInterfaces = __webpack_require__(804);
 var AgentArtifactType;
 (function (AgentArtifactType) {
     /**
@@ -18025,7 +17588,7 @@ exports.PersonalAccessTokenCredentialHandler = PersonalAccessTokenCredentialHand
 /***/ }),
 
 /***/ 335:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_710249__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -18047,8 +17610,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_710249__(710);
-const TaskAgentInterfaces = __nested_webpack_require_710249__(267);
+const basem = __webpack_require__(710);
+const TaskAgentInterfaces = __webpack_require__(267);
 class TaskAgentApiBase extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-TaskAgent-api', options);
@@ -22620,12 +22183,12 @@ exports.TaskAgentApiBase = TaskAgentApiBase;
 /***/ }),
 
 /***/ 339:
-/***/ (function(module, __unusedexports, __nested_webpack_require_929355__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __nested_webpack_require_929355__(640);
+var utils = __webpack_require__(640);
 
 var has = Object.prototype.hasOwnProperty;
 var isArray = Array.isArray;
@@ -24321,7 +23884,7 @@ exports.TypeInfo.UserReportedConcern.fields = {
 /***/ 357:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(357);
+module.exports = require("assert");
 
 /***/ }),
 
@@ -24431,7 +23994,7 @@ exports.TypeInfo.FileContainerItem.fields = {
 /***/ }),
 
 /***/ 412:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_999192__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -24453,8 +24016,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_999192__(710);
-const FileContainerInterfaces = __nested_webpack_require_999192__(378);
+const basem = __webpack_require__(710);
+const FileContainerInterfaces = __webpack_require__(378);
 class FileContainerApiBase extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-FileContainer-api', options);
@@ -24601,9 +24164,9 @@ exports.FileContainerApiBase = FileContainerApiBase;
 /***/ }),
 
 /***/ 413:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1006962__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
-module.exports = __nested_webpack_require_1006962__(141);
+module.exports = __webpack_require__(141);
 
 
 /***/ }),
@@ -24611,7 +24174,7 @@ module.exports = __nested_webpack_require_1006962__(141);
 /***/ 417:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(417);
+module.exports = require("crypto");
 
 /***/ }),
 
@@ -25156,21 +24719,28 @@ exports.TypeInfo.WorkItemTypeModel.fields = {
 /***/ }),
 
 /***/ 431:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1026112__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const os = __nested_webpack_require_1026112__(87);
+const os = __importStar(__webpack_require__(87));
 /**
  * Commands
  *
  * Command Format:
- *   ##[name key=value;key=value]message
+ *   ::name key=value,key=value::message
  *
  * Examples:
- *   ##[warning]This is the user warning message
- *   ##[set-secret name=mypassword]definitelyNotAPassword!
+ *   ::warning::This is the message
+ *   ::set-env name=MY_VAR::some value
  */
 function issueCommand(command, properties, message) {
     const cmd = new Command(command, properties, message);
@@ -25195,41 +24765,60 @@ class Command {
         let cmdStr = CMD_STRING + this.command;
         if (this.properties && Object.keys(this.properties).length > 0) {
             cmdStr += ' ';
+            let first = true;
             for (const key in this.properties) {
                 if (this.properties.hasOwnProperty(key)) {
                     const val = this.properties[key];
                     if (val) {
-                        // safely append the val - avoid blowing up when attempting to
-                        // call .replace() if message is not a string for some reason
-                        cmdStr += `${key}=${escape(`${val || ''}`)},`;
+                        if (first) {
+                            first = false;
+                        }
+                        else {
+                            cmdStr += ',';
+                        }
+                        cmdStr += `${key}=${escapeProperty(val)}`;
                     }
                 }
             }
         }
-        cmdStr += CMD_STRING;
-        // safely append the message - avoid blowing up when attempting to
-        // call .replace() if message is not a string for some reason
-        const message = `${this.message || ''}`;
-        cmdStr += escapeData(message);
+        cmdStr += `${CMD_STRING}${escapeData(this.message)}`;
         return cmdStr;
     }
 }
-function escapeData(s) {
-    return s.replace(/\r/g, '%0D').replace(/\n/g, '%0A');
+/**
+ * Sanitizes an input into a string so it can be passed into issueCommand safely
+ * @param input input to sanitize into a string
+ */
+function toCommandValue(input) {
+    if (input === null || input === undefined) {
+        return '';
+    }
+    else if (typeof input === 'string' || input instanceof String) {
+        return input;
+    }
+    return JSON.stringify(input);
 }
-function escape(s) {
-    return s
+exports.toCommandValue = toCommandValue;
+function escapeData(s) {
+    return toCommandValue(s)
+        .replace(/%/g, '%25')
+        .replace(/\r/g, '%0D')
+        .replace(/\n/g, '%0A');
+}
+function escapeProperty(s) {
+    return toCommandValue(s)
+        .replace(/%/g, '%25')
         .replace(/\r/g, '%0D')
         .replace(/\n/g, '%0A')
-        .replace(/]/g, '%5D')
-        .replace(/;/g, '%3B');
+        .replace(/:/g, '%3A')
+        .replace(/,/g, '%2C');
 }
 //# sourceMappingURL=command.js.map
 
 /***/ }),
 
 /***/ 461:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1028336__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -25251,8 +24840,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1028336__(710);
-const GalleryInterfaces = __nested_webpack_require_1028336__(352);
+const basem = __webpack_require__(710);
+const GalleryInterfaces = __webpack_require__(352);
 class GalleryCompatHttpClientBase extends basem.ClientApiBase {
     constructor(baseUrl, handlers, userAgent, options) {
         super(baseUrl, handlers, userAgent, options);
@@ -25355,14 +24944,14 @@ exports.GalleryCompatHttpClientBase = GalleryCompatHttpClientBase;
 /***/ }),
 
 /***/ 469:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1033996__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 Object.defineProperty(exports, "__esModule", { value: true });
-const resthandlers = __nested_webpack_require_1033996__(941);
+const resthandlers = __webpack_require__(941);
 class NtlmCredentialHandler extends resthandlers.NtlmCredentialHandler {
     constructor(username, password, workstation, domain) {
         super(username, password, workstation, domain);
@@ -25374,7 +24963,7 @@ exports.NtlmCredentialHandler = NtlmCredentialHandler;
 /***/ }),
 
 /***/ 470:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1034623__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -25387,10 +24976,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const command_1 = __nested_webpack_require_1034623__(431);
-const os = __nested_webpack_require_1034623__(87);
-const path = __nested_webpack_require_1034623__(622);
+const command_1 = __webpack_require__(431);
+const os = __importStar(__webpack_require__(87));
+const path = __importStar(__webpack_require__(622));
 /**
  * The code to exit an action
  */
@@ -25411,11 +25007,13 @@ var ExitCode;
 /**
  * Sets env variable for this action and future actions in the job
  * @param name the name of the variable to set
- * @param val the value of the variable
+ * @param val the value of the variable. Non-string values will be converted to a string via JSON.stringify
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function exportVariable(name, val) {
-    process.env[name] = val;
-    command_1.issueCommand('set-env', { name }, val);
+    const convertedVal = command_1.toCommandValue(val);
+    process.env[name] = convertedVal;
+    command_1.issueCommand('set-env', { name }, convertedVal);
 }
 exports.exportVariable = exportVariable;
 /**
@@ -25454,12 +25052,22 @@ exports.getInput = getInput;
  * Sets the value of an output.
  *
  * @param     name     name of the output to set
- * @param     value    value to store
+ * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function setOutput(name, value) {
     command_1.issueCommand('set-output', { name }, value);
 }
 exports.setOutput = setOutput;
+/**
+ * Enables or disables the echoing of commands into stdout for the rest of the step.
+ * Echoing is disabled by default if ACTIONS_STEP_DEBUG is not set.
+ *
+ */
+function setCommandEcho(enabled) {
+    command_1.issue('echo', enabled ? 'on' : 'off');
+}
+exports.setCommandEcho = setCommandEcho;
 //-----------------------------------------------------------------------
 // Results
 //-----------------------------------------------------------------------
@@ -25477,6 +25085,13 @@ exports.setFailed = setFailed;
 // Logging Commands
 //-----------------------------------------------------------------------
 /**
+ * Gets whether Actions Step Debug is on or not
+ */
+function isDebug() {
+    return process.env['RUNNER_DEBUG'] === '1';
+}
+exports.isDebug = isDebug;
+/**
  * Writes debug message to user log
  * @param message debug message
  */
@@ -25486,18 +25101,18 @@ function debug(message) {
 exports.debug = debug;
 /**
  * Adds an error issue
- * @param message error issue message
+ * @param message error issue message. Errors will be converted to string via toString()
  */
 function error(message) {
-    command_1.issue('error', message);
+    command_1.issue('error', message instanceof Error ? message.toString() : message);
 }
 exports.error = error;
 /**
  * Adds an warning issue
- * @param message warning issue message
+ * @param message warning issue message. Errors will be converted to string via toString()
  */
 function warning(message) {
-    command_1.issue('warning', message);
+    command_1.issue('warning', message instanceof Error ? message.toString() : message);
 }
 exports.warning = warning;
 /**
@@ -25555,8 +25170,9 @@ exports.group = group;
  * Saves state for current action, the state can only be retrieved by this action's post job execution.
  *
  * @param     name     name of the state to store
- * @param     value    value to store
+ * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function saveState(name, value) {
     command_1.issueCommand('save-state', { name }, value);
 }
@@ -25576,7 +25192,7 @@ exports.getState = getState;
 /***/ }),
 
 /***/ 474:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1040625__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -25591,41 +25207,41 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const buildm = __nested_webpack_require_1040625__(743);
-const corem = __nested_webpack_require_1040625__(583);
-const dashboardm = __nested_webpack_require_1040625__(680);
-const extmgmtm = __nested_webpack_require_1040625__(942);
-const featuremgmtm = __nested_webpack_require_1040625__(109);
-const filecontainerm = __nested_webpack_require_1040625__(865);
-const gallerym = __nested_webpack_require_1040625__(205);
-const gitm = __nested_webpack_require_1040625__(800);
-const locationsm = __nested_webpack_require_1040625__(12);
-const notificationm = __nested_webpack_require_1040625__(938);
-const policym = __nested_webpack_require_1040625__(797);
-const profilem = __nested_webpack_require_1040625__(828);
-const projectm = __nested_webpack_require_1040625__(222);
-const releasem = __nested_webpack_require_1040625__(916);
-const securityrolesm = __nested_webpack_require_1040625__(7);
-const taskagentm = __nested_webpack_require_1040625__(75);
-const taskm = __nested_webpack_require_1040625__(48);
-const testm = __nested_webpack_require_1040625__(843);
-const tfvcm = __nested_webpack_require_1040625__(221);
-const wikim = __nested_webpack_require_1040625__(621);
-const workm = __nested_webpack_require_1040625__(217);
-const workitemtrackingm = __nested_webpack_require_1040625__(229);
-const workitemtrackingprocessm = __nested_webpack_require_1040625__(943);
-const workitemtrackingprocessdefinitionm = __nested_webpack_require_1040625__(725);
-const basicm = __nested_webpack_require_1040625__(186);
-const bearm = __nested_webpack_require_1040625__(231);
-const ntlmm = __nested_webpack_require_1040625__(469);
-const patm = __nested_webpack_require_1040625__(864);
-const rm = __nested_webpack_require_1040625__(105);
-const vsom = __nested_webpack_require_1040625__(821);
-const crypto = __nested_webpack_require_1040625__(417);
-const fs = __nested_webpack_require_1040625__(747);
-const os = __nested_webpack_require_1040625__(87);
-const url = __nested_webpack_require_1040625__(835);
-const path = __nested_webpack_require_1040625__(622);
+const buildm = __webpack_require__(743);
+const corem = __webpack_require__(583);
+const dashboardm = __webpack_require__(680);
+const extmgmtm = __webpack_require__(942);
+const featuremgmtm = __webpack_require__(109);
+const filecontainerm = __webpack_require__(865);
+const gallerym = __webpack_require__(205);
+const gitm = __webpack_require__(800);
+const locationsm = __webpack_require__(12);
+const notificationm = __webpack_require__(938);
+const policym = __webpack_require__(797);
+const profilem = __webpack_require__(828);
+const projectm = __webpack_require__(222);
+const releasem = __webpack_require__(916);
+const securityrolesm = __webpack_require__(7);
+const taskagentm = __webpack_require__(75);
+const taskm = __webpack_require__(48);
+const testm = __webpack_require__(843);
+const tfvcm = __webpack_require__(221);
+const wikim = __webpack_require__(621);
+const workm = __webpack_require__(217);
+const workitemtrackingm = __webpack_require__(229);
+const workitemtrackingprocessm = __webpack_require__(943);
+const workitemtrackingprocessdefinitionm = __webpack_require__(725);
+const basicm = __webpack_require__(186);
+const bearm = __webpack_require__(231);
+const ntlmm = __webpack_require__(469);
+const patm = __webpack_require__(864);
+const rm = __webpack_require__(105);
+const vsom = __webpack_require__(821);
+const crypto = __webpack_require__(417);
+const fs = __webpack_require__(747);
+const os = __webpack_require__(87);
+const url = __webpack_require__(835);
+const path = __webpack_require__(622);
 const isBrowser = typeof window !== 'undefined';
 /**
  * Methods to return handler objects (see handlers folder)
@@ -25727,8 +25343,8 @@ class WebApi {
         }
         else {
             let nodeApiVersion = 'unknown';
-            const packageJsonPath = __nested_webpack_require_1040625__.ab + "package.json";
-            if (fs.existsSync(__nested_webpack_require_1040625__.ab + "package.json")) {
+            const packageJsonPath = __webpack_require__.ab + "package.json";
+            if (fs.existsSync(__webpack_require__.ab + "package.json")) {
                 nodeApiVersion = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8')).version;
             }
             const osName = os.platform();
@@ -26131,17 +25747,17 @@ exports.TypeInfo.RoleAssignment.fields = {
 /***/ }),
 
 /***/ 525:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1066248__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 Object.defineProperty(exports, "__esModule", { value: true });
-const http = __nested_webpack_require_1066248__(605);
-const https = __nested_webpack_require_1066248__(211);
-const _ = __nested_webpack_require_1066248__(891);
-const ntlm = __nested_webpack_require_1066248__(56);
+const http = __webpack_require__(605);
+const https = __webpack_require__(211);
+const _ = __webpack_require__(891);
+const ntlm = __webpack_require__(56);
 class NtlmCredentialHandler {
     constructor(username, password, workstation, domain) {
         this._ntlmOptions = {};
@@ -27156,7 +26772,7 @@ exports.TypeInfo.WorkItemUpdate.fields = {
 /***/ }),
 
 /***/ 583:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1100260__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -27178,9 +26794,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1100260__(710);
-const CoreInterfaces = __nested_webpack_require_1100260__(976);
-const OperationsInterfaces = __nested_webpack_require_1100260__(490);
+const basem = __webpack_require__(710);
+const CoreInterfaces = __webpack_require__(976);
+const OperationsInterfaces = __webpack_require__(490);
 class CoreApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Core-api', options);
@@ -28089,12 +27705,12 @@ exports.CoreApi = CoreApi;
 /***/ 605:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(605);
+module.exports = require("http");
 
 /***/ }),
 
 /***/ 610:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1143087__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -28108,7 +27724,7 @@ module.exports = __nested_webpack_require_1924__(605);
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const GitInterfaces = __nested_webpack_require_1143087__(693);
+const GitInterfaces = __webpack_require__(693);
 /**
  * Wiki types.
  */
@@ -28195,12 +27811,12 @@ exports.TypeInfo.WikiV2.fields = {
 /***/ 614:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(614);
+module.exports = require("events");
 
 /***/ }),
 
 /***/ 621:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1145677__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -28222,9 +27838,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1145677__(710);
-const Comments_Contracts = __nested_webpack_require_1145677__(661);
-const WikiInterfaces = __nested_webpack_require_1145677__(610);
+const basem = __webpack_require__(710);
+const Comments_Contracts = __webpack_require__(661);
+const WikiInterfaces = __webpack_require__(610);
 class WikiApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Wiki-api', options);
@@ -28976,14 +28592,14 @@ exports.WikiApi = WikiApi;
 /***/ 622:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(622);
+module.exports = require("path");
 
 /***/ }),
 
 /***/ 631:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(631);
+module.exports = require("net");
 
 /***/ }),
 
@@ -29244,14 +28860,14 @@ module.exports = {
 /***/ }),
 
 /***/ 643:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1190686__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
 "use strict";
 
 
-var stringify = __nested_webpack_require_1190686__(819);
-var parse = __nested_webpack_require_1190686__(339);
-var formats = __nested_webpack_require_1190686__(755);
+var stringify = __webpack_require__(819);
+var parse = __webpack_require__(339);
+var formats = __webpack_require__(755);
 
 module.exports = {
     formats: formats,
@@ -29263,7 +28879,7 @@ module.exports = {
 /***/ }),
 
 /***/ 654:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1190999__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -29277,7 +28893,7 @@ module.exports = {
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const GalleryInterfaces = __nested_webpack_require_1190999__(352);
+const GalleryInterfaces = __webpack_require__(352);
 /**
  * How the acquisition is assigned
  */
@@ -30074,12 +29690,12 @@ exports.TypeInfo.CommentVersion.fields = {
 /***/ 669:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(669);
+module.exports = require("util");
 
 /***/ }),
 
 /***/ 680:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1218402__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -30101,8 +29717,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1218402__(710);
-const DashboardInterfaces = __nested_webpack_require_1218402__(268);
+const basem = __webpack_require__(710);
+const DashboardInterfaces = __webpack_require__(268);
 class DashboardApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Dashboard-api', options);
@@ -30569,7 +30185,7 @@ exports.DashboardApi = DashboardApi;
 /***/ }),
 
 /***/ 693:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1241423__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -30583,8 +30199,8 @@ exports.DashboardApi = DashboardApi;
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const PolicyInterfaces = __nested_webpack_require_1241423__(698);
-const TfsCoreInterfaces = __nested_webpack_require_1241423__(976);
+const PolicyInterfaces = __webpack_require__(698);
+const TfsCoreInterfaces = __webpack_require__(976);
 /**
  * The status of a comment thread.
  */
@@ -33089,17 +32705,17 @@ exports.TypeInfo.PolicyEvaluationRecord.fields = {
 /***/ }),
 
 /***/ 710:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1322122__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 Object.defineProperty(exports, "__esModule", { value: true });
-const vsom = __nested_webpack_require_1322122__(821);
-const serm = __nested_webpack_require_1322122__(840);
-const rm = __nested_webpack_require_1322122__(105);
-const hm = __nested_webpack_require_1322122__(874);
+const vsom = __webpack_require__(821);
+const serm = __webpack_require__(840);
+const rm = __webpack_require__(105);
+const hm = __webpack_require__(874);
 class ClientApiBase {
     constructor(baseUrl, handlers, userAgent, options) {
         this.baseUrl = baseUrl;
@@ -33131,7 +32747,7 @@ exports.ClientApiBase = ClientApiBase;
 /***/ }),
 
 /***/ 725:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1323742__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -33153,8 +32769,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1323742__(710);
-const WorkItemTrackingProcessDefinitionsInterfaces = __nested_webpack_require_1323742__(982);
+const basem = __webpack_require__(710);
+const WorkItemTrackingProcessDefinitionsInterfaces = __webpack_require__(982);
 class WorkItemTrackingProcessDefinitionsApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-WorkItemTracking-api', options);
@@ -34513,7 +34129,7 @@ exports.WorkItemTrackingProcessDefinitionsApi = WorkItemTrackingProcessDefinitio
 /***/ }),
 
 /***/ 729:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1389160__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -34528,10 +34144,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const qs = __nested_webpack_require_1389160__(643);
-const url = __nested_webpack_require_1389160__(835);
-const path = __nested_webpack_require_1389160__(622);
-const zlib = __nested_webpack_require_1389160__(761);
+const qs = __webpack_require__(643);
+const url = __webpack_require__(835);
+const path = __webpack_require__(622);
+const zlib = __webpack_require__(761);
 /**
  * creates an url from a request url and optional base url (http://server:8080)
  * @param {string} resource - a fully qualified url or relative path
@@ -34640,7 +34256,7 @@ exports.obtainContentCharset = obtainContentCharset;
 /***/ }),
 
 /***/ 743:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1394619__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -34662,8 +34278,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1394619__(710);
-const BuildInterfaces = __nested_webpack_require_1394619__(256);
+const basem = __webpack_require__(710);
+const BuildInterfaces = __webpack_require__(256);
 class BuildApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Build-api', options);
@@ -37508,12 +37124,12 @@ exports.BuildApi = BuildApi;
 /***/ 747:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(747);
+module.exports = require("fs");
 
 /***/ }),
 
 /***/ 755:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1530331__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
 "use strict";
 
@@ -37521,7 +37137,7 @@ module.exports = __nested_webpack_require_1924__(747);
 var replace = String.prototype.replace;
 var percentTwenties = /%20/g;
 
-var util = __nested_webpack_require_1530331__(640);
+var util = __webpack_require__(640);
 
 var Format = {
     RFC1738: 'RFC1738',
@@ -37549,7 +37165,7 @@ module.exports = util.assign(
 /***/ 761:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(761);
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -38436,12 +38052,12 @@ exports.TypeInfo.SubscriptionTracing.fields = {
 /***/ 794:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(413);
+module.exports = require("stream");
 
 /***/ }),
 
 /***/ 797:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1566571__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -38463,8 +38079,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1566571__(710);
-const PolicyInterfaces = __nested_webpack_require_1566571__(698);
+const basem = __webpack_require__(710);
+const PolicyInterfaces = __webpack_require__(698);
 class PolicyApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Policy-api', options);
@@ -38836,7 +38452,7 @@ exports.PolicyApi = PolicyApi;
 /***/ }),
 
 /***/ 800:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1585218__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -38858,8 +38474,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1585218__(710);
-const GitInterfaces = __nested_webpack_require_1585218__(693);
+const basem = __webpack_require__(710);
+const GitInterfaces = __webpack_require__(693);
 class GitApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Git-api', options);
@@ -43489,13 +43105,13 @@ exports.TypeInfo.InputValuesQuery.fields = {
 /***/ }),
 
 /***/ 819:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1816453__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __nested_webpack_require_1816453__(640);
-var formats = __nested_webpack_require_1816453__(755);
+var utils = __webpack_require__(640);
+var formats = __webpack_require__(755);
 var has = Object.prototype.hasOwnProperty;
 
 var arrayPrefixGenerators = {
@@ -43768,7 +43384,7 @@ module.exports = function (object, opts) {
 /***/ }),
 
 /***/ 821:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1824581__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -43777,8 +43393,8 @@ module.exports = function (object, opts) {
 //*******************************************************************************************************
 Object.defineProperty(exports, "__esModule", { value: true });
 /// Imports of 3rd Party ///
-const url = __nested_webpack_require_1824581__(835);
-const path = __nested_webpack_require_1824581__(622);
+const url = __webpack_require__(835);
+const path = __webpack_require__(622);
 class InvalidApiResourceVersionError {
     constructor(message) {
         this.name = "Invalid resource version";
@@ -44154,10 +43770,10 @@ exports.TypeInfo.ProfileRegions.fields = {
 /***/ }),
 
 /***/ 826:
-/***/ (function(module, __unusedexports, __nested_webpack_require_1839003__) {
+/***/ (function(module, __unusedexports, __webpack_require__) {
 
-var crypto = __nested_webpack_require_1839003__(417);
-var $ = __nested_webpack_require_1839003__(144);
+var crypto = __webpack_require__(417);
+var $ = __webpack_require__(144);
 
 /*
  * Generate the LM Hash
@@ -44225,7 +43841,7 @@ module.exports.lmhash = lmhash;
 /***/ }),
 
 /***/ 828:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1840601__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -44247,8 +43863,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1840601__(710);
-const ProfileInterfaces = __nested_webpack_require_1840601__(823);
+const basem = __webpack_require__(710);
+const ProfileInterfaces = __webpack_require__(823);
 class ProfileApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Profile-api', options);
@@ -44729,7 +44345,7 @@ exports.ProfileApi = ProfileApi;
 /***/ 835:
 /***/ (function(module) {
 
-module.exports = __nested_webpack_require_1924__(835);
+module.exports = require("url");
 
 /***/ }),
 
@@ -45013,7 +44629,7 @@ var ContractSerializer;
 /***/ }),
 
 /***/ 843:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_1875405__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -45035,8 +44651,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_1875405__(710);
-const TestInterfaces = __nested_webpack_require_1875405__(966);
+const basem = __webpack_require__(710);
+const TestInterfaces = __webpack_require__(966);
 class TestApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Test-api', options);
@@ -47612,7 +47228,7 @@ exports.TestApi = TestApi;
 /***/ }),
 
 /***/ 851:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2001048__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -47626,7 +47242,7 @@ exports.TestApi = TestApi;
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const VSSInterfaces = __nested_webpack_require_2001048__(135);
+const VSSInterfaces = __webpack_require__(135);
 var InheritLevel;
 (function (InheritLevel) {
     InheritLevel[InheritLevel["None"] = 0] = "None";
@@ -47708,14 +47324,14 @@ exports.TypeInfo.ServiceDefinition.fields = {
 /***/ }),
 
 /***/ 864:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2004076__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 Object.defineProperty(exports, "__esModule", { value: true });
-const resthandlers = __nested_webpack_require_2004076__(941);
+const resthandlers = __webpack_require__(941);
 class PersonalAccessTokenCredentialHandler extends resthandlers.PersonalAccessTokenCredentialHandler {
     constructor(token) {
         super(token);
@@ -47727,7 +47343,7 @@ exports.PersonalAccessTokenCredentialHandler = PersonalAccessTokenCredentialHand
 /***/ }),
 
 /***/ 865:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2004695__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -47750,11 +47366,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 // Licensed under the MIT license.  See LICENSE file in the project root for full license information.
-const stream = __nested_webpack_require_2004695__(794);
-const zlib = __nested_webpack_require_2004695__(761);
-const httpm = __nested_webpack_require_2004695__(874);
-const FileContainerApiBase = __nested_webpack_require_2004695__(412);
-const FileContainerInterfaces = __nested_webpack_require_2004695__(378);
+const stream = __webpack_require__(794);
+const zlib = __webpack_require__(761);
+const httpm = __webpack_require__(874);
+const FileContainerApiBase = __webpack_require__(412);
+const FileContainerInterfaces = __webpack_require__(378);
 class FileContainerApi extends FileContainerApiBase.FileContainerApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, options);
@@ -47970,7 +47586,7 @@ class BufferStream extends stream.Readable {
 /***/ }),
 
 /***/ 874:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2014902__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -47985,10 +47601,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const url = __nested_webpack_require_2014902__(835);
-const http = __nested_webpack_require_2014902__(605);
-const https = __nested_webpack_require_2014902__(211);
-const util = __nested_webpack_require_2014902__(729);
+const url = __webpack_require__(835);
+const http = __webpack_require__(605);
+const https = __webpack_require__(211);
+const util = __webpack_require__(729);
 let fs;
 let tunnel;
 var HttpCodes;
@@ -48104,7 +47720,7 @@ class HttpClient {
             this._certConfig = requestOptions.cert;
             if (this._certConfig) {
                 // If using cert, need fs
-                fs = __nested_webpack_require_2014902__(747);
+                fs = __webpack_require__(747);
                 // cache the cert content into memory, so we don't have to read it from disk every time
                 if (this._certConfig.caFile && fs.existsSync(this._certConfig.caFile)) {
                     this._ca = fs.readFileSync(this._certConfig.caFile, 'utf8');
@@ -48369,7 +47985,7 @@ class HttpClient {
         if (useProxy) {
             // If using proxy, need tunnel
             if (!tunnel) {
-                tunnel = __nested_webpack_require_2014902__(413);
+                tunnel = __webpack_require__(413);
             }
             const agentOptions = {
                 maxSockets: maxSockets,
@@ -48516,7 +48132,7 @@ exports.HttpClient = HttpClient;
   // backwards-compatibility for the old `require()` API. If we're in
   // the browser, add `_` as a global object.
   if (true) {
-    if (      true && module.exports) {
+    if ( true && module.exports) {
       exports = module.exports = _;
     }
     exports._ = _;
@@ -49699,7 +49315,7 @@ exports.HttpClient = HttpClient;
 
   // Optimize `isFunction` if appropriate. Work around some typeof bugs in old v8,
   // IE 11 (#1621), and in Safari 8 (#1929).
-  if (      true && typeof Int8Array != 'object') {
+  if ( true && typeof Int8Array != 'object') {
     _.isFunction = function(obj) {
       return typeof obj == 'function' || false;
     };
@@ -50019,7 +49635,7 @@ exports.HttpClient = HttpClient;
 /***/ }),
 
 /***/ 916:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2090236__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -50041,8 +49657,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_2090236__(710);
-const ReleaseInterfaces = __nested_webpack_require_2090236__(314);
+const basem = __webpack_require__(710);
+const ReleaseInterfaces = __webpack_require__(314);
 class ReleaseApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Release-api', options);
@@ -52719,10 +52335,29 @@ exports.ReleaseApi = ReleaseApi;
 /***/ }),
 
 /***/ 918:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2219929__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -52732,18 +52367,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const azdev = __importStar(__nested_webpack_require_2219929__(474));
+exports.ArtifactDownloader = void 0;
+const azdev = __importStar(__webpack_require__(474));
+const fs = __importStar(__webpack_require__(747));
 class ArtifactDownloader {
     constructor() { }
-    download(projectId, buildDefinitionId, patToken, orgName, artifactName, branchName, commit) {
+    download(projectId, buildDefinitionId, patToken, orgName, artifactName, branchName, commit, targetDirectory) {
         return __awaiter(this, void 0, void 0, function* () {
             // base tfs url
             const baseTfsUrl = 'https://dev.azure.com';
@@ -52754,7 +52384,6 @@ class ArtifactDownloader {
             let connection = new azdev.WebApi(orgUrl, authHandler);
             const buildApi = yield connection.getBuildApi();
             // get top build for a particular definitions
-            console.log(branchName);
             let builds = yield buildApi.getBuilds(projectId, // projectId
             [buildDefinitionId], // definitions
             undefined, // queues
@@ -52778,29 +52407,40 @@ class ArtifactDownloader {
             undefined // repositoryType
             );
             if (commit) {
-                builds = builds.filter(build => {
-                    console.log(build.sourceVersion);
-                    return build.sourceVersion == commit;
-                });
+                builds = builds.filter(build => build.sourceVersion == commit);
             }
             const latestBuild = builds[0];
-            console.log(latestBuild);
-            // // get artifact as zip
-            // const readableStream = await buildApi.getArtifactContentZip(projectId,
-            // Number(latestBuild.id), artifactName); const artifactDirPath =
-            // `${process.env.GITHUB_WORKSPACE}/${artifactName}`
-            // // create artifact directory if not exists
-            // if (!fs.existsSync(artifactDirPath)) {
-            //     fs.mkdirSync(artifactDirPath);
-            // }
-            // // store artifact
-            // const artifactFilePathStream =
-            // fs.createWriteStream(`${artifactDirPath}/${artifactName}.zip`);
-            // readableStream.pipe(artifactFilePathStream);
-            // readableStream.on('end',()=>{
-            //     console.log(`Artifact of build number ${latestBuild.buildNumber}
-            //     downloaded at ${artifactDirPath}`);
-            // });
+            console.log('Found build', latestBuild);
+            targetDirectory = `${process.env.GITHUB_WORKSPACE}/${targetDirectory}`;
+            if (!fs.existsSync(targetDirectory)) {
+                fs.mkdirSync(targetDirectory);
+            }
+            let artifactNames = [artifactName];
+            if (!artifactName) {
+                const buildArtifacts = yield buildApi.getArtifacts(projectId, Number(latestBuild.id));
+                artifactNames = buildArtifacts.map(buildArtifact => buildArtifact.name);
+            }
+            console.log('Artifacts', artifactNames);
+            for (let ix = 0; ix < artifactNames.length; ix++) {
+                const name = artifactNames[ix];
+                if (!name) {
+                    continue;
+                }
+                // get artifact as zip
+                const readableStream = yield buildApi.getArtifactContentZip(projectId, Number(latestBuild.id), name);
+                const artifactDirPath = `${targetDirectory}/${name}`;
+                // create artifact directory if not exists
+                if (!fs.existsSync(artifactDirPath)) {
+                    fs.mkdirSync(artifactDirPath);
+                }
+                // store artifact
+                const artifactFilePathStream = fs.createWriteStream(`${artifactDirPath}/${artifactName}.zip`);
+                readableStream.pipe(artifactFilePathStream);
+                readableStream.on('end', () => {
+                    console.log(`Artifact of build number ${latestBuild.buildNumber}
+        downloaded at ${artifactDirPath}`);
+                });
+            }
         });
     }
 }
@@ -52810,7 +52450,7 @@ exports.ArtifactDownloader = ArtifactDownloader;
 /***/ }),
 
 /***/ 938:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2223934__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -52832,9 +52472,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_2223934__(710);
-const NotificationInterfaces = __nested_webpack_require_2223934__(766);
-const VSSInterfaces = __nested_webpack_require_2223934__(135);
+const basem = __webpack_require__(710);
+const NotificationInterfaces = __webpack_require__(766);
+const VSSInterfaces = __webpack_require__(135);
 class NotificationApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-Notification-api', options);
@@ -53440,25 +53080,25 @@ exports.NotificationApi = NotificationApi;
 /***/ }),
 
 /***/ 941:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2253883__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var basiccreds_1 = __nested_webpack_require_2253883__(228);
+var basiccreds_1 = __webpack_require__(228);
 exports.BasicCredentialHandler = basiccreds_1.BasicCredentialHandler;
-var bearertoken_1 = __nested_webpack_require_2253883__(571);
+var bearertoken_1 = __webpack_require__(571);
 exports.BearerCredentialHandler = bearertoken_1.BearerCredentialHandler;
-var ntlm_1 = __nested_webpack_require_2253883__(525);
+var ntlm_1 = __webpack_require__(525);
 exports.NtlmCredentialHandler = ntlm_1.NtlmCredentialHandler;
-var personalaccesstoken_1 = __nested_webpack_require_2253883__(327);
+var personalaccesstoken_1 = __webpack_require__(327);
 exports.PersonalAccessTokenCredentialHandler = personalaccesstoken_1.PersonalAccessTokenCredentialHandler;
 
 
 /***/ }),
 
 /***/ 942:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2254556__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -53480,9 +53120,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_2254556__(710);
-const ExtensionManagementInterfaces = __nested_webpack_require_2254556__(654);
-const GalleryInterfaces = __nested_webpack_require_2254556__(352);
+const basem = __webpack_require__(710);
+const ExtensionManagementInterfaces = __webpack_require__(654);
+const GalleryInterfaces = __webpack_require__(352);
 class ExtensionManagementApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-ExtensionManagement-api', options);
@@ -54236,7 +53876,7 @@ exports.ExtensionManagementApi = ExtensionManagementApi;
 /***/ }),
 
 /***/ 943:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2291364__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 
@@ -54258,8 +53898,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const basem = __nested_webpack_require_2291364__(710);
-const WorkItemTrackingProcessInterfaces = __nested_webpack_require_2291364__(426);
+const basem = __webpack_require__(710);
+const WorkItemTrackingProcessInterfaces = __webpack_require__(426);
 class WorkItemTrackingProcessApi extends basem.ClientApiBase {
     constructor(baseUrl, handlers, options) {
         super(baseUrl, handlers, 'node-WorkItemTracking-api', options);
@@ -55978,7 +55618,7 @@ exports.WorkItemTrackingProcessApi = WorkItemTrackingProcessApi;
 /***/ }),
 
 /***/ 966:
-/***/ (function(__unusedmodule, exports, __nested_webpack_require_2373850__) {
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
 
 "use strict";
 /*
@@ -55992,8 +55632,8 @@ exports.WorkItemTrackingProcessApi = WorkItemTrackingProcessApi;
  */
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const SystemData = __nested_webpack_require_2373850__(215);
-const TfsCoreInterfaces = __nested_webpack_require_2373850__(976);
+const SystemData = __webpack_require__(215);
+const TfsCoreInterfaces = __webpack_require__(976);
 /**
  * The types of test attachments.
  */
@@ -58660,306 +58300,6 @@ exports.TypeInfo.WorkItemTypeModel.fields = {
     }
 };
 
-
-/***/ })
-
-/******/ });
-
-/***/ }),
-
-/***/ 605:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(605);
-
-/***/ }),
-
-/***/ 614:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(614);
-
-/***/ }),
-
-/***/ 622:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(622);
-
-/***/ }),
-
-/***/ 631:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(631);
-
-/***/ }),
-
-/***/ 669:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(669);
-
-/***/ }),
-
-/***/ 747:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(747);
-
-/***/ }),
-
-/***/ 761:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(761);
-
-/***/ }),
-
-/***/ 835:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(835);
-
-/***/ })
-
-/******/ });
-
-/***/ }),
-
-/***/ 605:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(605);
-
-/***/ }),
-
-/***/ 614:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(614);
-
-/***/ }),
-
-/***/ 622:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(622);
-
-/***/ }),
-
-/***/ 631:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(631);
-
-/***/ }),
-
-/***/ 669:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(669);
-
-/***/ }),
-
-/***/ 747:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(747);
-
-/***/ }),
-
-/***/ 761:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(761);
-
-/***/ }),
-
-/***/ 835:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(835);
-
-/***/ })
-
-/******/ });
-
-/***/ }),
-
-/***/ 605:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(605);
-
-/***/ }),
-
-/***/ 614:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(614);
-
-/***/ }),
-
-/***/ 622:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(622);
-
-/***/ }),
-
-/***/ 631:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(631);
-
-/***/ }),
-
-/***/ 669:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(669);
-
-/***/ }),
-
-/***/ 747:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(747);
-
-/***/ }),
-
-/***/ 761:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(761);
-
-/***/ }),
-
-/***/ 835:
-/***/ (function(module) {
-
-module.exports = __nested_webpack_require_1924__(835);
-
-/***/ })
-
-/******/ });
-
-/***/ }),
-
-/***/ 605:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(605);
-
-/***/ }),
-
-/***/ 614:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(614);
-
-/***/ }),
-
-/***/ 622:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(622);
-
-/***/ }),
-
-/***/ 631:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(631);
-
-/***/ }),
-
-/***/ 669:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(669);
-
-/***/ }),
-
-/***/ 747:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(747);
-
-/***/ }),
-
-/***/ 761:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(761);
-
-/***/ }),
-
-/***/ 835:
-/***/ (function(module) {
-
-module.exports = __webpack_require__(835);
-
-/***/ })
-
-/******/ });
-
-/***/ }),
-
-/***/ 605:
-/***/ (function(module) {
-
-module.exports = require("http");
-
-/***/ }),
-
-/***/ 614:
-/***/ (function(module) {
-
-module.exports = require("events");
-
-/***/ }),
-
-/***/ 622:
-/***/ (function(module) {
-
-module.exports = require("path");
-
-/***/ }),
-
-/***/ 631:
-/***/ (function(module) {
-
-module.exports = require("net");
-
-/***/ }),
-
-/***/ 669:
-/***/ (function(module) {
-
-module.exports = require("util");
-
-/***/ }),
-
-/***/ 747:
-/***/ (function(module) {
-
-module.exports = require("fs");
-
-/***/ }),
-
-/***/ 761:
-/***/ (function(module) {
-
-module.exports = require("zlib");
-
-/***/ }),
-
-/***/ 835:
-/***/ (function(module) {
-
-module.exports = require("url");
 
 /***/ })
 
