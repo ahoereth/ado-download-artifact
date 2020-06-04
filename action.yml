@@ -16,6 +16,10 @@ inputs:
     description: 'Branch name to use for filtering builds'
   commit:
     description: 'Git commit to use for filtering builds'
+  targetDirectory:
+    description: 'Target directory to download to'
+    required: True
+    default: ado-artifacts
 branding:
   icon: 'download-cloud'
   color: 'blue'
