@@ -52411,6 +52411,7 @@ class ArtifactDownloader {
                 builds = builds.filter(build => build.sourceVersion == commit);
             }
             const latestBuild = builds[0];
+            const buildId = Number(latestBuild.id);
             console.log('Found build', latestBuild);
             targetDirectory = `${process.env.GITHUB_WORKSPACE}/${targetDirectory}`;
             if (!fs.existsSync(targetDirectory)) {
@@ -52418,7 +52419,8 @@ class ArtifactDownloader {
             }
             let artifactNames = [artifactName];
             if (!artifactName) {
-                const buildArtifacts = yield buildApi.getArtifacts(projectId, Number(latestBuild.id));
+                const buildArtifacts = yield buildApi.getArtifacts(projectId, buildId);
+                console.log(buildArtifacts);
                 artifactNames = buildArtifacts.map(buildArtifact => buildArtifact.name);
             }
             console.log('Artifacts', artifactNames);
@@ -52429,17 +52431,18 @@ class ArtifactDownloader {
                     continue;
                 }
                 // get and store artifact as zip
-                const readableStream = yield buildApi.getArtifactContentZip(projectId, Number(latestBuild.id), name);
+                const readableStream = yield buildApi.getArtifactContentZip(projectId, buildId, name);
                 const unzipPath = `${targetDirectory}/${name}`;
                 const zipPath = `${unzipPath}.zip`;
                 const artifactFilePathStream = fs.createWriteStream(zipPath);
                 readableStream.pipe(artifactFilePathStream);
                 promises.push(new Promise((resolve, reject) => {
-                    artifactFilePathStream.on('close', () => {
+                    readableStream.on('end', () => {
                         console.log(`Artifact downloaded: ${zipPath}`);
                         // fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
                         // extract(zipPath, {dir: unzipPath}).then(resolve)
                         // console.log(`Artifact unpacked: ${unzipPath}`)
+                        resolve();
                     });
                 }));
             }

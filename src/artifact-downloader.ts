@@ -53,6 +53,7 @@ export class ArtifactDownloader {
       builds = builds.filter(build => build.sourceVersion == commit)
     }
     const latestBuild = builds[0]
+    const buildId = Number(latestBuild.id)
     console.log('Found build', latestBuild)
 
     targetDirectory = `${process.env.GITHUB_WORKSPACE}/${targetDirectory}`
@@ -63,11 +64,8 @@ export class ArtifactDownloader {
     let artifactNames: (string | undefined)[] = [artifactName]
 
     if (!artifactName) {
-      const buildArtifacts = await buildApi.getArtifacts(
-        projectId,
-        Number(latestBuild.id)
-      )
-
+      const buildArtifacts = await buildApi.getArtifacts(projectId, buildId)
+      console.log(buildArtifacts)
       artifactNames = buildArtifacts.map(buildArtifact => buildArtifact.name)
     }
 
@@ -84,7 +82,7 @@ export class ArtifactDownloader {
       // get and store artifact as zip
       const readableStream = await buildApi.getArtifactContentZip(
         projectId,
-        Number(latestBuild.id),
+        buildId,
         name
       )
       const unzipPath = `${targetDirectory}/${name}`
@@ -94,11 +92,12 @@ export class ArtifactDownloader {
 
       promises.push(
         new Promise((resolve, reject) => {
-          artifactFilePathStream.on('close', () => {
+          readableStream.on('end', () => {
             console.log(`Artifact downloaded: ${zipPath}`)
             // fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
             // extract(zipPath, {dir: unzipPath}).then(resolve)
             // console.log(`Artifact unpacked: ${unzipPath}`)
+            resolve()
           })
         })
       )

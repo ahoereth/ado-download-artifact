@@ -16,6 +16,7 @@
     "fetchSpec": "^10.1.1"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/azure-devops-node-api/-/azure-devops-node-api-10.1.1.tgz",
