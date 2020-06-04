@@ -54,23 +54,46 @@ export class ArtifactDownloader {
       })
     }
     const latestBuild = builds[0]
-    console.log(latestBuild)
-    // // get artifact as zip
-    // const readableStream = await buildApi.getArtifactContentZip(projectId,
-    // Number(latestBuild.id), artifactName); const artifactDirPath =
-    // `${process.env.GITHUB_WORKSPACE}/${artifactName}`
-    // // create artifact directory if not exists
-    // if (!fs.existsSync(artifactDirPath)) {
-    //     fs.mkdirSync(artifactDirPath);
-    // }
 
-    // // store artifact
-    // const artifactFilePathStream =
-    // fs.createWriteStream(`${artifactDirPath}/${artifactName}.zip`);
-    // readableStream.pipe(artifactFilePathStream);
-    // readableStream.on('end',()=>{
-    //     console.log(`Artifact of build number ${latestBuild.buildNumber}
-    //     downloaded at ${artifactDirPath}`);
-    // });
+    let artifactNames: (string | undefined)[] = [artifactName]
+    if (!artifactName) {
+      const buildArtifacts = await buildApi.getArtifacts(
+        projectId,
+        Number(latestBuild.id)
+      )
+
+      artifactNames = buildArtifacts.map(buildArtifact => buildArtifact.name)
+    }
+
+    for (let ix = 0; ix < artifactNames.length; ix++) {
+      const artifactName = artifactNames[ix]
+      if (!artifactName) {
+        continue
+      }
+
+      // get artifact as zip
+      const readableStream = await buildApi.getArtifactContentZip(
+        projectId,
+        Number(latestBuild.id),
+        artifactName
+      )
+
+      const artifactDirPath = `${process.env.GITHUB_WORKSPACE}/${artifactName}`
+
+      // create artifact directory if not exists
+      if (!fs.existsSync(artifactDirPath)) {
+        fs.mkdirSync(artifactDirPath)
+      }
+
+      // store artifact
+      const artifactFilePathStream = fs.createWriteStream(
+        `${artifactDirPath}/${artifactName}.zip`
+      )
+      readableStream.pipe(artifactFilePathStream)
+      readableStream.on('end', () => {
+        console.log(`Artifact of build number ${latestBuild.buildNumber}
+        downloaded at ${artifactDirPath}`)
+      })
+    }
   }
 }
