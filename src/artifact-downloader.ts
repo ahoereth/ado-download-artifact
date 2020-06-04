@@ -1,6 +1,6 @@
 import * as azdev from 'azure-devops-node-api'
-import * as bi from 'azure-devops-node-api/interfaces/BuildInterfaces'
 import * as fs from 'fs'
+import unzip from 'unzip'
 
 export class ArtifactDownloader {
   constructor() {}
@@ -79,28 +79,20 @@ export class ArtifactDownloader {
         continue
       }
 
-      // get artifact as zip
+      // get and store artifact as zip
       const readableStream = await buildApi.getArtifactContentZip(
         projectId,
         Number(latestBuild.id),
         name
       )
-
-      const artifactDirPath = `${targetDirectory}/${name}`
-
-      // create artifact directory if not exists
-      if (!fs.existsSync(artifactDirPath)) {
-        fs.mkdirSync(artifactDirPath)
-      }
-
-      // store artifact
-      const artifactFilePathStream = fs.createWriteStream(
-        `${artifactDirPath}/${artifactName}.zip`
-      )
+      const unzipPath = `${targetDirectory}/${name}`
+      const zipPath = `${unzipPath}.zip`
+      const artifactFilePathStream = fs.createWriteStream(zipPath)
       readableStream.pipe(artifactFilePathStream)
-      readableStream.on('end', () => {
-        console.log(`Artifact of build number ${latestBuild.buildNumber}
-        downloaded at ${artifactDirPath}`)
+      artifactFilePathStream.on('close', () => {
+        console.log(`Artifact downloaded: ${zipPath}`)
+        fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
+        console.log(`Artifact unpacked: ${unzipPath}`)
       })
     }
   }
