@@ -25,9 +25,9 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@types/unzip": "^0.1.1",
     "azure-devops-node-api": "^10.1.1",
-    "unzip": "^0.1.11"
+    "extract-zip": "^2.0.0",
+    "unzip-stream": "^0.3.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",

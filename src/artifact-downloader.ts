@@ -1,6 +1,6 @@
 import * as azdev from 'azure-devops-node-api'
 import * as fs from 'fs'
-import unzip from 'unzip'
+// import extract from 'extract-zip'
 
 export class ArtifactDownloader {
   constructor() {}
@@ -73,6 +73,8 @@ export class ArtifactDownloader {
 
     console.log('Artifacts', artifactNames)
 
+    const promises: Promise<void>[] = []
+
     for (let ix = 0; ix < artifactNames.length; ix++) {
       const name = artifactNames[ix]
       if (!name) {
@@ -89,11 +91,19 @@ export class ArtifactDownloader {
       const zipPath = `${unzipPath}.zip`
       const artifactFilePathStream = fs.createWriteStream(zipPath)
       readableStream.pipe(artifactFilePathStream)
-      artifactFilePathStream.on('close', () => {
-        console.log(`Artifact downloaded: ${zipPath}`)
-        fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
-        console.log(`Artifact unpacked: ${unzipPath}`)
-      })
+
+      promises.push(
+        new Promise((resolve, reject) => {
+          artifactFilePathStream.on('close', () => {
+            console.log(`Artifact downloaded: ${zipPath}`)
+            // fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
+            // extract(zipPath, {dir: unzipPath}).then(resolve)
+            // console.log(`Artifact unpacked: ${unzipPath}`)
+          })
+        })
+      )
     }
+
+    await Promise.all(promises)
   }
 }
