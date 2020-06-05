@@ -1,6 +1,28 @@
+import base64 from 'base-64'
+import fetch from 'node-fetch'
 import * as azdev from 'azure-devops-node-api'
 import * as fs from 'fs'
 // import extract from 'extract-zip'
+
+const downloadFile = async (url: string, path: string, auth: string) => {
+  const res = await fetch(url, {
+    method: 'GET',
+    redirect: 'follow',
+    headers: {
+      Authorization: auth
+    }
+  })
+  const fileStream = fs.createWriteStream(path)
+  await new Promise((resolve, reject) => {
+    res.body.pipe(fileStream)
+    res.body.on('error', (err: any) => {
+      reject(err)
+    })
+    fileStream.on('finish', function() {
+      resolve()
+    })
+  })
+}
 
 export class ArtifactDownloader {
   constructor() {}
@@ -61,46 +83,53 @@ export class ArtifactDownloader {
       fs.mkdirSync(targetDirectory)
     }
 
-    let artifactNames: (string | undefined)[] = [artifactName]
+    // let artifactNames: (string | undefined)[] = [artifactName]
 
-    if (!artifactName) {
-      const buildArtifacts = await buildApi.getArtifacts(projectId, buildId)
-      console.log(buildArtifacts)
-      artifactNames = buildArtifacts.map(buildArtifact => buildArtifact.name)
-    }
+    const buildArtifacts = await buildApi.getArtifacts(projectId, buildId)
+    // console.log(buildArtifacts)
+    // artifactNames = buildArtifacts.map(buildArtifact => buildArtifact.name)
 
-    console.log('Artifacts', artifactNames)
+    console.log('Artifacts', buildArtifacts)
 
     const promises: Promise<void>[] = []
 
-    for (let ix = 0; ix < artifactNames.length; ix++) {
-      const name = artifactNames[ix]
-      if (!name) {
+    for (let ix = 0; ix < buildArtifacts.length; ix++) {
+      const buildArtifact = buildArtifacts[ix]
+      if (!buildArtifact.resource || !buildArtifact.resource.downloadUrl) {
         continue
       }
 
-      // get and store artifact as zip
-      const readableStream = await buildApi.getArtifactContentZip(
-        projectId,
-        buildId,
-        name
-      )
-      const unzipPath = `${targetDirectory}/${name}`
+      const unzipPath = `${targetDirectory}/${buildArtifact.name}`
       const zipPath = `${unzipPath}.zip`
-      const artifactFilePathStream = fs.createWriteStream(zipPath)
-      readableStream.pipe(artifactFilePathStream)
 
-      promises.push(
-        new Promise((resolve, reject) => {
-          readableStream.on('end', () => {
-            console.log(`Artifact downloaded: ${zipPath}`)
-            // fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
-            // extract(zipPath, {dir: unzipPath}).then(resolve)
-            // console.log(`Artifact unpacked: ${unzipPath}`)
-            resolve()
-          })
-        })
+      const b64 = base64.encode(`pat: ${patToken}`)
+      await downloadFile(
+        buildArtifact.resource.downloadUrl,
+        zipPath,
+        ''
+        // `Basic ${b64}`
       )
+
+      // // get and store artifact as zip
+      // const readableStream = await buildApi.getArtifactContentZip(
+      //   projectId,
+      //   buildId,
+      //   name
+      // )
+      // const artifactFilePathStream = fs.createWriteStream(zipPath)
+      // readableStream.pipe(artifactFilePathStream)
+
+      // promises.push(
+      //   new Promise((resolve, reject) => {
+      //     readableStream.on('end', () => {
+      //       console.log(`Artifact downloaded: ${zipPath}`)
+      //       // fs.createReadStream(zipPath).pipe(unzip.Extract({path: unzipPath}))
+      //       // extract(zipPath, {dir: unzipPath}).then(resolve)
+      //       // console.log(`Artifact unpacked: ${unzipPath}`)
+      //       resolve()
+      //     })
+      //   })
+      // )
     }
 
     await Promise.all(promises)
